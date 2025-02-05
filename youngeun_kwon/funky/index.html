@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rest API</title>
+
+    <!-- css reset -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+    <!-- External CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- header section  -->
+    <header>
+        <a href="/">
+            <img src="/assets/images/NASA_logo.svg.png" alt="official nasa logo">
+        </a>
+    </header>
+    <!-- nav section -->
+    <nav>
+        <ul>
+            <li><a href="#nasa">Click here to see NASA Astronomy Picture of the Day</a></li>
+        </ul>
+    </nav>
+    <!-- hero section -->
+    <section class="hero">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="/assets/videos/space2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>NASA TODAY</h1>
+            <p>Exploring the Universe</p>
+        </div>
+    </section>
+    <!-- nasa section -->
+    <section class="container" id="nasa">
+        <h2>NASA Astronomy Picture of the Day</h2>
+        <input type="date" id="datePicker">
+        <button id="fetchButton">Get Picture</button>
+        <div id="apodContainer">
+            <h3 id="title"></h3>
+            <p id="date"></p>
+            <img id="apodImage" src="" alt="nasa astronomy picture of the day (apod) displaying a daily image or photograph related to space, stars, galaxies, or celestial events" style="display: none;">
+            <iframe id="apodVideo" style="display: none;"></iframe>
+            <p id="description"></p>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+        <p>@Designed by Youngeun Kwon</p>
+    </footer>
+
+    <!-- link to js -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

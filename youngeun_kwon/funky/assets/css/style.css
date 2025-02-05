@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle&family=Paytone+One&display=swap');
+
+/* mobile first design */
+/* body styling */
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #e4e0e1;
+    color: #493628;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* header styling */
+header {
+    padding: 20px;  
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+/* nav styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background: #222;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: rgb(33, 148, 236);   
+}
+
+/* hero styling */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.808);
+    text-align: center;
+    font-family: "Paytone One", serif;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+/* nasa styling */
+.container {
+    margin: 50px auto;
+    max-width: 400px;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+iframe, #apodImage {
+    width: 100%;
+    max-height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+h2  {
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+#apodVideo {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
+    min-height: 400px; 
+    aspect-ratio: 16/9;
+}
+
+#description {
+    padding: 20px;
+    font-family: "Dongle", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+/* footer styling */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #1e1e1e, #333);
+    color: white;
+}
+
+/* desktop styling */
+/* media query for larger screens */
+@media (min-width: 769px) {       
+    /* desktop nasa styling */
+    .container {
+        max-width: 600px;
+    }
+}
